@@ -8,3 +8,4 @@ nvim_config:
     download, compile and install latest neovim from github
     also copy config files to standard path
     config files include: plugins config, keymaps, colorscheme, etc.
+    Some plugins optimized for c/c++, python, bash, make and some other languages
