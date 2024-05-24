@@ -5,6 +5,11 @@ return {
   dependencies = {
     "windwp/nvim-ts-autotag",
   },
+  opts = function(_, opts)
+    if type(opts.ensure_installed) == "table" then
+      vim.list_extend(opts.ensure_installed, { "c", "cpp" })
+    end
+  end,
   config = function()
     -- import nvim-treesitter plugin
     local treesitter = require("nvim-treesitter.configs")

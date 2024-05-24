@@ -29,7 +29,7 @@ return {
         "awk_ls",
         --"asm_lsp",
         "bashls",
-        "clangd",
+        --"clangd",
         --"neocmake",
         "dockerls",
         "biome",
@@ -54,7 +54,7 @@ return {
         "mypy",
         --"clangtidy",
         --"cppcheck",
-        "cpplint",
+        --"cpplint",
       },
     })
   end,
