@@ -6,4 +6,4 @@ sudo apt install ninja-build gettext cmake unzip curl build-essential -y
 
 # this need for lsp modules
 # also need install python env and pip for current python version
-sudo apt install npm cargo -y
+sudo apt install npm cargo clangd clang-tidy -y
