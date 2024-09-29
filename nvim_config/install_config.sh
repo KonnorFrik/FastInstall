@@ -1,4 +1,10 @@
-#! /bin/bash
+#! /usr/bin/bash
+
+################ ##   #     #
+#
+# Copy nvim config from local folder to its work path
+#
+################ ##   #     #
 
 source ./VARS.sh
 

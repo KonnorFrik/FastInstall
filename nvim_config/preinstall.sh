@@ -1,4 +1,10 @@
-#! /bin/bash
+#! /usr/bin/bash
+
+################ ##   #     #
+#
+# Create dirs for neovim and sources files
+#
+################ ##   #     #
 
 source ./VARS.sh
 

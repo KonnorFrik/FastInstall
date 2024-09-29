@@ -18,9 +18,10 @@ install_neovim:
 install_config:
 > ./install_config.sh
 
+################### NOT IN 'ALL' CHAIN ###################
 install_lazygit:
 > ./install_lazygit.sh
 
 freeze:
 > ./freeze.sh
-
+################### NOT IN 'ALL' CHAIN ###################

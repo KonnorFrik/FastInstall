@@ -1,4 +1,10 @@
-#! /bin/bash
+#! /usr/bin/bash
+
+################ ##   #     #
+#
+# Download sources of neovim and compile it
+#
+################ ##   #     #
 
 source ./VARS.sh
 NVIM_SRC_DIR=$SRC_DIR/neovim

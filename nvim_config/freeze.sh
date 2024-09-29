@@ -1,6 +1,10 @@
-#! /bin/bash
+#! /usr/bin/bash
 
-# Save current neovim config
+################ ##   #     #
+#
+# Copy nvim config from its work path to local folder
+#
+################ ##   #     #
 
 source ./VARS.sh
 

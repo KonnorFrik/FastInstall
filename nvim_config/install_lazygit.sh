@@ -1,4 +1,10 @@
-#! /bin/bash
+#! /usr/bin/bash
+
+################ ##   #     #
+#
+# Download sources of lazygin and install it
+#
+################ ##   #     #
 
 source ./VARS.sh
 
