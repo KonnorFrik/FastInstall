@@ -1,0 +1,10 @@
+Trouble:
+    While open *.h file see error from nvim like:
+        "clang-tidy: ...: No such file or directory"
+
+    Solution:
+        # apt install clang-tidy
+        also can be installed 'clangd'
+
+TODO:
+    [ ] add step printing
