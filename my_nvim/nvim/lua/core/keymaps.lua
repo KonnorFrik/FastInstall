@@ -25,7 +25,7 @@ vim.keymap.set("n", "<C-l>", "<C-w>l")
 vim.keymap.set("n", "<leader>sv", "<C-w>v", {desc = "Split window verticaly"})
 vim.keymap.set("n", "<leader>sh", "<C-w>s", {desc = "Split window horizontaly"})
 vim.keymap.set("n", "<leader>se", "<C-w>=", {desc = "Make splits equal size"})
-vim.keymap.set("n", "<leader>sx", "<cmd>x<CR>", {desc = "Save and close current split"})
+vim.keymap.set("n", "<leader>sx", "<cmd>close<CR>", {desc = "Save and close current split"})
 
 --	Tab management
 vim.keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", {desc = "Open new tab"})
