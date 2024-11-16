@@ -36,7 +36,7 @@ return {
                 ["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
                 ["<C-k>"] = cmp.mapping.select_prev_item(), -- move to prev
                 ["<C-j>"] = cmp.mapping.select_next_item(), -- move to next
-                ["<CR>"] = cmp.mapping.confirm({ select = true }), -- choose current 
+                ["<CR>"] = cmp.mapping.confirm({ select = false }), -- choose explicity current
             }),
 
             -- sources for autocompletion
