@@ -11,7 +11,7 @@ return {
 
         ts.setup({
             highlight = { enable = true },
-            indent = { enable = true },
+            indent = { enable = false },
             autotag = { enable = true },
             ensure_installed = {
                 "c",
