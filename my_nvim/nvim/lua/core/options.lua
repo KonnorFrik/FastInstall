@@ -22,4 +22,27 @@ vim.opt.syntax = 'on'
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
+-- Configure diagnostic
+vim.diagnostic.config({
+    virtual_text = true, -- show error message to right after text
+    signs = false,        -- show signs at left before line number
+    underline = true,    -- show underline at word where error found
+    update_in_insert = false,
+    float = {
+        border = "rounded",
+        source = true,
+    },
+    severity_sort = true,
+})
 
+-- Get list of linters by filetype for current open file
+vim.api.nvim_create_user_command("LintInfo", function()
+    local filetype = vim.bo.filetype
+    local linters = require("lint").linters_by_ft[filetype]
+
+    if linters then
+        print("Linters for " .. filetype .. ": " .. table.concat(linters, ", "))
+    else
+        print("No linters configured for filetype: " .. filetype)
+    end
+end, {})
