@@ -46,3 +46,16 @@ vim.api.nvim_create_user_command("LintInfo", function()
         print("No linters configured for filetype: " .. filetype)
     end
 end, {})
+
+-- Get the current running linters for buffer
+-- Note: work not good
+-- vim.api.nvim_create_user_command("LintRuns", function()
+--     local linters = require("lint").get_running()
+--
+--     if #linters == 0 then
+--         print("No running linters")
+--     else
+--         print("Running linters: " .. table.concat(linters, ", "))
+--     end
+-- end, {})
+
