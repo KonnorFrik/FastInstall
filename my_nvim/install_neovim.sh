@@ -6,7 +6,7 @@
 #
 ################ ##   #     #
 
-set -e
+#set -e
 
 source ./VARS.sh
 NVIM_SRC_DIR=$SRC_DIR/neovim
