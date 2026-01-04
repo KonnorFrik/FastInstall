@@ -19,7 +19,7 @@ echo "Download lazygit to $LAZY_GIT_SRC_DIR/lazygit.tar.gz ..."
 printf "\t%s\n" "curl -Lo $LAZY_GIT_SRC_DIR/lazygit.tar.gz 'https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz'"
 curl -Lo $LAZY_GIT_SRC_DIR/lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
 
-echo "Unpack lazygit to here"
+echo "Unpack lazygit to current directory"
 printf "\t%s\n" "tar xf $LAZY_GIT_SRC_DIR/lazygit.tar.gz lazygit"
 tar xf $LAZY_GIT_SRC_DIR/lazygit.tar.gz lazygit
 

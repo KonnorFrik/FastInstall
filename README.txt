@@ -3,11 +3,11 @@ Writed for debian
 
 Subdir:
 
-nvim_config:
-    Thanks to @joseanmartinez from youtube for this neovim config
-    download, compile and install latest neovim from github
-    also copy config files to standard path
-    config files include: plugins config, keymaps, colorscheme, etc.
+my_nvim:
+    Download, compile and install latest neovim from github
+    Also copy config files to standard path
+    Config files include: plugins config, keymaps, colorscheme, etc.
+    Primary plagins for golang
     Some plugins optimized for c/c++, python, bash, make and some other languages
 
 packages:
