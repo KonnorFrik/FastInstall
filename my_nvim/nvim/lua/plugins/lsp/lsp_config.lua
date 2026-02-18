@@ -54,6 +54,7 @@ return {
                 },
             },
         })
+        vim.lsp.enable("gopls")
 
         mason_lspconfig.setup({
             handlers = {
