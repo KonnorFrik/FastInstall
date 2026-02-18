@@ -10,7 +10,6 @@ return {
     },
 
     config = function()
-        local lspconfig = require("lspconfig")
         local cmp_nvim_lsp = require("cmp_nvim_lsp")
         local mason_lspconfig = require("mason-lspconfig")
 
@@ -48,17 +47,18 @@ return {
             vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = ""})
         end
 
-        -- mason_lspconfig.setup_handlers({
-        --     function(server_name)
-        --         lspconfig[server_name].setup({
-        --             capabilities = capabilities,
-        --         })
-        --     end,
-        -- })
+        vim.lsp.config("gopls", {
+            settings = {
+                gopls = {
+                    semanticTokens = true,
+                },
+            },
+        })
+
         mason_lspconfig.setup({
             handlers = {
                 function(server_name)
-                    require('lspconfig')[server_name].setup({}) -- Default setup for all servers
+                    vim.lsp.config(server_name).setup({}) -- Default setup for all servers
                 end,
             },
         })
